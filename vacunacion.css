@@ -1,0 +1,483 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #6f7885;}
+
+p{
+    line-height: 20pt;
+}
+
+body{
+    background-color: #FEFEFF;
+}
+.header{
+    height:120px; width:100%;
+    position: absolute;
+    top:0px; left:0px;
+    background-color: rgb(245, 245, 245);
+
+}
+.blue{
+    height: 100%;
+    width:45%;
+    background-color: rgba(37,118,223,.3);
+    position: absolute;
+    top:0;
+    right:0;
+    box-shadow: inset 40px 10px 50px rgb(245, 245, 245);
+}
+h1{
+    font-size: xx-large; font-weight: bold;
+    margin:50px 0 0 100px;
+    color:#2c4bc6; 
+}
+h2{
+    color:#1f3f70;
+    font-size:50px;
+    font-weight: bolder;
+    line-height: 40pt;
+}
+.container{
+    height: 40px;
+    width:50%;
+    position:absolute;
+    bottom:30px;
+    right:150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight:bold;
+    font-size: larger;
+}
+
+.buttomheader{
+    height: 100%;
+    width:200px;
+    background: #2c4bc6;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px #2c4bc6;
+    color:#FEFEFF;
+    text-align: center;
+    padding-top: 10px;   
+}
+
+.intro{
+    width:100%;
+    background: #2c4bc6;
+    position: absolute;
+    top:120px;
+    left:0px;
+}
+.dialog{
+    width:30%;
+    position: absolute;
+    top:100px;
+    left:100px;  
+}
+
+.icon{
+    width: 25px; 
+    height: 25px;
+    background-color: #fff8e9;
+}
+.icon img{
+    width: 100%px;
+    height: 100%px;
+}
+
+.details{
+    width:100%;
+    display:flex;
+    justify-content: space-between;    
+}
+.details div{
+    display: flex;
+}
+.model{
+    background: rgb(8,152,230);
+background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, rgba(31,58,139,1) 89%);
+    width:43%;
+    height: 650px;
+    position:absolute;
+    right:0px;
+    display: flex;
+    justify-content: center;
+}
+.agenda{
+    
+    width:70%;
+    height: 200px;
+    position: absolute;
+    top: 550px;
+    left:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: large;
+}
+.agendiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+    
+}
+.agendiv .icon{
+    width: 35px;
+    height: 35px; 
+    background-color: #e9edf8;
+    position: relative;
+}
+.agendiv img{
+    width:100%
+}
+.agenda p{
+    line-height: 0px;
+    color: #1f3f70;
+    font-weight: bold;
+}
+
+.box{
+    width: 90%;
+    height: 150px;
+    background-color: rgba(230, 230, 230,.8);
+    position: absolute;
+    bottom:0px;
+    right: 0px;;
+    box-shadow: 10px 1px 80px rgba(0, 0, 0,.2);
+    display: flex; 
+    justify-content: space-around;
+}
+
+.box .buttomheader{
+    height: 25%;
+    position: relative;
+    top:50%;
+    transform: translate(0,-50%);
+    
+}
+.box .agendiv{
+    height: 100%;
+    width:270px;
+    
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.input{
+    width:80%;
+    height: 50px;
+    border: 0px;
+    background: rgba(22,22,22, .0);
+    font-size: large;
+    color: #1f3f70;
+    font-weight: bolder;
+}
+
+.logos{
+    background-color: #fefefe;
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    left:0px;
+    top:102%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logos img{
+    height:50px;
+    opacity: .5;
+}
+.logos img:nth-child(2){
+    height:35px;
+    
+}
+
+.porque{
+    position: absolute;
+    top: 1050px;
+    left: 0px;
+    width:100%;
+    height: 650px;
+    background-color: #fefefe;
+}
+
+.porque .dialog{
+    top:10px;
+}
+
+.benefits{
+    
+    width: 75%;
+    height: 300px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit{
+    background-color: #fefefe;
+    height: 100%;
+    width: 24%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 70px rgba(31,58,139,.2);
+    border-radius: 10px;
+}
+.iconB{
+    background-color: #e9edf8;
+    width:45px;
+    height: 45px;
+    position: relative;
+    top:25px;
+    left: 25px;
+    border-radius: 10px;
+}
+.iconB img{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.porque .benefit div:not(.iconB){
+    position: absolute;
+    top:70px;
+    left:20px;
+    width:80%
+}
+.sub{
+    line-height: 20px;
+    color: #1f3f70;
+    font-weight: bold;
+    font-size: large;
+}
+
+.preparaciones{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top:1730px;
+    left:0px;
+    
+}
+.preparaciones .dialog{
+    position: absolute;
+    left:54%;
+    width: 35%;
+    background-color: #fefefe;
+}
+.recommend{
+    width: 90%;
+    border-radius: 7px;;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 4px 50px rgba(31,58,139,.2);
+    margin: 30px;
+    
+}
+.recommend div{
+    height: 35px;
+    width:35px;
+    background-color: #e9edf8;
+    border-radius: 10px;
+    margin:10px;
+}
+.recommend img{
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+.recommend details{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+summary {
+    display: block;
+}
+  
+summary::after {
+    
+    display: inline-block;
+    transition: 0.2s;
+    content: '🔽'; /* chevron */
+}
+  
+details[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+.dialog :nth-child(3) summary::after {
+    margin-left: 10ch;
+  }
+.dialog :nth-child(4) summary::after {
+    margin-left: 21ch;
+  }
+.dialog :nth-child(5) summary::after {
+    margin-left: 15ch;
+  }
+.dialog :nth-child(6) summary::after {
+    margin-left: 19.5ch;
+  }
+.dialog :nth-child(7) summary::after {
+    margin-left: 23ch;
+  }
+
+.preparaciones .model{
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    height:500px;
+}
+
+.preparaciones .model img{
+    height: 130%;
+    position: absolute;
+    bottom:0px;
+}
+.contact{
+    width:100%;
+    height:850px;
+    position: absolute;
+    top:2680px;
+    left:0;
+}
+.contact .dialog{
+    width:40%;
+    height:850px;
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    top:0px;
+
+}
+
+.contact .dialog .benefit{
+    width:250px;
+    height:215px;
+    margin: 13px;
+    position: relative;
+    
+}
+.contact .dialog .benefit img{
+    width:65%;
+    height:65%;
+    position: absolute;
+    top:50%;    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.boxtitle{
+    width:120px;
+    height: 47px;
+    position: absolute;
+    top:27px;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boxtitle .sub{
+    font-size: 22px;
+}
+
+.contact .benefit .buttomheader{
+    height: 40px;
+    width:80%;
+    position: relative;
+    left:25px;
+    top:70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.contact .buttomheader:not([color="blue"]) {
+    background: #e9edf8;
+    color: #2c4bc6;
+}
+
+.contact .model{
+    position: absolute;
+    bottom: 40px;
+    height:60%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact .model img{
+    height: 130%;  
+}
+
+.footer{
+    background-color: #e9edf8;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    left:0px;
+    top:3620px;
+}
+
+.a{
+
+    height: 65%;
+    width: 17%;
+    position: absolute;
+    top:40px;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+    .a h1, .a p{
+        margin-left: 0px;
+        position: relative;
+        top: -15%;
+    }
+.b{
+    height: 65%;
+    width: 45%;
+    position: absolute;
+    top:40px;
+    right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.c{
+    height: 30px;
+    width: 91.5%;
+    position: absolute;
+    margin-left: 60px;
+    margin-right: 60px;
+    bottom:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.c div{
+    position: relative;
+    top:-14px;
+    display: flex;
+    flex-direction: row;
+}
+
+.c :nth-child(2) div{
+    margin-left: 15px;
+    top:0px;
+    
+}
