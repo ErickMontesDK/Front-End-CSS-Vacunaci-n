@@ -9,22 +9,34 @@
         <link rel="stylesheet" href="./vacunacion.css">
      
     </head>
-
     <body>
         <!--Header-->
         <section class="header">
-            <h1>Vacunación</h1>
+            
             <div class="rblue"></div>
             <div class="container">
-                <p>Base de datos</p>
-                <p>Educación</p>
-                <p>Noticias</p>
-                <p>Regulación</p>
-                <div class="buttom">Desmintiendo mitos</div>
+                <div>
+                    <h1>Vacunación</h1>
+                </div>
+                <div class="menu">
+                    <span>
+                        <p>Base de datos</p>
+                    </span>
+                    <span>
+                        <p>Educación</p>
+                    </span>
+                   <span>
+                        <p>Noticias</p>
+                   </span>
+                    <span>
+                        <p>Regulación</p>
+                    </span>
+                    <div class="buttom">Desmintiendo mitos</div>
+                </div>
             </div>
         </section>
         
-
+       
         <!--Intro-->
         <section class="intro">
             <div class="dialog">
@@ -40,7 +52,7 @@
                     </div>
                     <div>
                         <div class="icon">
-                            <img src="./Iconos/star.gif">
+                            <img src="./Iconos/icons8-estrella-48.png">
                         </div>
                         Vacunas Seleccionadas
                     </div>
@@ -53,30 +65,41 @@
             </div>
         </section>
 
-        <!--Formulario-->
+         <!--Formulario-->
         <section class="agenda">
-            <div class="card">
+
+            <div class="card1">
                 <div class="iconsb">
-                    <img src="./Iconos/45-clock-time-lineal.gif"></div>
+                    <img src="./Iconos/icons8-reloj-50.png"></div>
                 <p class="sub">Agenda tu vacunación</p>
             </div>
+
             <div class="box">
+
                 <div class="card">
-                    <div class="iconsb">
-                        <img src="./Iconos/maps.gif"></div>
-                    <p class="sub">Locación</p>
+                    <div class="cardti">
+                        <div class="iconsb">
+                            <img src="./Iconos/icons8-map-64.png"></div>
+                        <p class="sub">Locación</p>
+                    </div class="cardti">
                     <input type="text" class="input" id="from" name="from" placeholder="Ciudad, Estado">
                 </div>
+
                 <div class="card">
-                    <div class="iconsb">
-                        <img src="./Iconos/45-clock-time-lineal.gif"></div>
-                    <p class="sub">Fecha</p>
+                    <div class="cardti">
+                        <div class="iconsb">
+                            <img src="./Iconos/icons8-calendario-48.png"></div>
+                        <p class="sub">Fecha</p>
+                    </div class="cardti">
                     <input type="date" class="input" id="when" name="when">
                 </div>
+
                 <div class="card">
-                    <div class="iconsb">
-                        <img src="./Iconos/inyeccion.gif"></div>
-                    <p class="sub">Tipo de vacuna</p>
+                    <div class="cardti">
+                        <div class="iconsb">
+                            <img src="./Iconos/icons8-jeringa-50.png"></div>
+                        <p class="sub">Tipo de vacuna</p>
+                    </div class="cardti">
                     <select id="vacuna" name="vacuna" class="input">
                         <option value="Moderna">AstraZeneca</option>
                         <option value="Aztra">Sinovac</option>
@@ -85,9 +108,10 @@
                     </select>
                     
                 </div>
-                <div class="buttom">Registrar</div>
-            </div>
 
+                <div class="buttom">Registrar</div>
+
+            </div>
         </section>
 
         <!--Logos-->
@@ -105,6 +129,8 @@
                 <p>Con fin de disipar cualquier duda sobre recibir la vacuna para
                     el Covid-19, observe los siguientes 4 beneficios sobre la vacunación</p>
             </div>
+
+            
             <div class="benefits">
                 <div class="benefit">
                     <div class="iconB"><img src="./Iconos/parallel-tasks-icon-32.png"></div>
@@ -141,14 +167,18 @@
             </div>
         </section>
 
-        <!--Preparaciones-->
-        <section class="preparaciones">
+
+         <!--Preparaciones-->
+         <section class="preparaciones">
+
+            
             <div class="photobackground">
                 <img src="./models/girls.png">
             </div>
+            
 
             <div class="dialog">
-                <h2 >Preparaciones antes de vacunarse</h2>
+                <h2>Preparaciones antes de vacunarse</h2>
                 <p>El éxito de las vacunas es fuertemente influenciada por la fuerza
                     del sistema inmune del cuerpo. Por lo tanto, hay muchas cosas que 
                     se pueden hacer para que la vacune funcione: </p>
@@ -198,73 +228,166 @@
                       </details>
                 </div>
             </div>
+
         </section>
+
+                       <!--Contacto de emergencia-->
+               <section class="contact">
+                <div class="dialog">
+                    <h2>Contacto de emergencia</h2>
+                    <p>Marca a alguno de los contactos de abajo si tú o alguien de
+                        tu familia se sienten mal y tienen algun sintoma similar a
+                        los del Covid-19. Asegurate cuidarte igualmente antes de reportarnos:
+                    </p>
+    
+                    <div class="allebenefits">
+    
+                        <div class="benefit">
+                            
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/phone-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Llamar</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div>
+
+                            <div class="buttom">Llamar aquí</div>
+                        </div>
+                        
+                        <div class="benefit">
+                            
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/quote-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Chat</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div class="benefitheader">
+                            <div class="buttom" color="blue">Chatear aquí</div>
+                        </div>
+
+                        <div class="benefit">
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/video-call-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Videollamada</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div>
+                            <div class="buttom">Iniciar videollamada</div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/message-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Mensaje</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div class="benefitheader">
+                            <div class="buttom">Mandar mensaje</div>
+                        </div>
+                    </div class="allebenefits">
+                </div>
+    
+
+                <div class="photobackground">
+                    <img src="./models/enfermero.png">
+                </div>
+            </section>
 
         <!--Contacto de emergencia-->
-        <section class="contact">
-            <div class="dialog">
-                <h2>Contacto de emergencia</h2>
-                <p>Marca a alguno de los contactos de abajo si tú o alguien de
-                    tu familia se sienten mal y tienen algun sintoma similar a
-                    los del Covid-19. Asegurate cuidarte igualmente antes de reportarnos:
-                </p>
+           <section class="contact">
+                <div class="dialog">
+                    <h2>Contacto de emergencia</h2>
+                    <p>Marca a alguno de los contactos de abajo si tú o alguien de
+                        tu familia se sienten mal y tienen algun sintoma similar a
+                        los del Covid-19. Asegurate cuidarte igualmente antes de reportarnos:
+                    </p>
+    
+                    <div class="allebenefits">
+    
+                        <div class="benefit">
+                            
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/phone-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Llamar</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div>
 
-                <diV class="benefit">
-                    
-                    <div class="iconB">
-                        <img src="./Iconos/phone-icon-48.png">
-                    </div>
-                    <div class="boxtitle">
-                        <div class="sub">Llamar</div>
-                        <div>021.123.145.14</div>
-                    </div>
-                    <div class="buttom">Llamar aquí</div>
-                </diV>
+                            <div class="buttom">Llamar aquí</div>
+                        </div>
+                        
+                        <div class="benefit">
+                            
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/quote-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Chat</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div class="benefitheader">
+                            <div class="buttom" color="blue">Chatear aquí</div>
+                        </div>
 
-                <diV class="benefit">
-                    
-                    <div class="iconB">
-                        <img src="./Iconos/quote-icon-48.png">
-                    </div>
-                    <div class="boxtitle">
-                        <div class="sub">Chat</div>
-                        <div>021.123.145.14</div>
-                    </div>
-                    <div class="buttom" color="blue">Chatear aquí</div>
-                </diV>
-                <diV class="benefit">
-                    <div class="iconB">
-                        <img src="./Iconos/video-call-icon-48.png">
-                    </div>
-                    <div class="boxtitle">
-                        <div class="sub">Videollamada</div>
-                        <div>021.123.145.14</div>
-                    </div>
-                    <div class="buttom">Iniciar videollamada</div>
-                </diV>
-                <diV class="benefit">
-                    <div class="iconB">
-                        <img src="./Iconos/message-icon-48.png">
-                    </div>
-                    <div class="boxtitle">
-                        <div class="sub">Mensaje</div>
-                        <div>021.123.145.14</div>
-                    </div>
-                    <div class="buttom">Mandar mensaje</div>
-                </diV>
-            </div>
-            <div class="photobackground">
-                <img src="./models/enfermero.png">
-            </div>
-        </section>
+                        <div class="benefit">
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/video-call-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Videollamada</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div>
+                            <div class="buttom">Iniciar videollamada</div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/message-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Mensaje</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div class="benefitheader">
+                            <div class="buttom">Mandar mensaje</div>
+                        </div>
+                    </div class="allebenefits">
+                </div>
+    
+
+                <div class="photobackground">
+                    <img src="./models/enfermero.png">
+                </div>
+            </section>  
 
         <!--Footer-->
         <section class="footer">
             <div class="a">
-                <h1>Vacunación</h1>
-               <p>Nuestra meta es ayudar a liberar al mundo
-                   de la actual pandemía
-               </p> 
+                <span>
+                    <h1>Vacunación</h1>
+                </span>
+               <div>
+                   <p>Nuestra meta es ayudar a liberar al mundo
+                       de la actual pandemía
+                   </p>
+               </div> 
             </div>
             <div class="b">
                 <div>
@@ -295,6 +418,7 @@
                 </div>
             </div>
         </section>
+
 
         
     </body>
