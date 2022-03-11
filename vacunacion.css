@@ -13,7 +13,7 @@ p{
 }
 h1{
     font-size: xx-large; font-weight: bold;
-    margin:50px 0 0 100px;
+    
     color:#2c4bc6; 
 }
 h2{
@@ -35,9 +35,12 @@ h2{
     border-radius: 6px;
     box-shadow: 0 10px 30px #2c4bc6;
     color:#FEFEFF;
-    text-align: center;
-    padding-top: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: large;  
+    text-align: center;
+
 }
 .input{
     width:80%;
@@ -49,10 +52,7 @@ h2{
     font-weight: bolder;
 }
 .dialog{
-    width:30%;
-    position: absolute;
-    top:100px;
-    left:100px;  
+    width:400px;  
 }
 .icon{
     width: 25px; 
@@ -77,29 +77,41 @@ h2{
     border-radius: 10px;
 }
 .icon img, .iconsb img, .iconB img{
-    height: 90%;
+    height: 60%;
     position: absolute;
-    top:50%;    left: 50%;
+    top:50%;
+    left: 50%;
     transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
 }
 
 .photobackground{
     background: rgb(8,152,230);
-background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, rgba(31,58,139,1) 89%);
+    background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, rgba(31,58,139,1) 89%);
     width:43%;
     height: 650px;
-    position:absolute;
-    right:0px;
+    
     display: flex;
     justify-content: center;
 }
 
+
+
+
 /*Elementos de Header*/
 .header{
-    height:120px; width:100%;
+    width:100%;
     position: absolute;
     top:0px; left:0px;
     background-color: rgb(245, 245, 245);
+
+    height:120px; 
+}
+.header h1{
+    margin:0;
 }
 
 .rblue{
@@ -113,25 +125,81 @@ background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, 
 }
 .container{
     height: 40px;
-    width:50%;
+    width:100%;
     position:absolute;
-    bottom:30px;
-    right:150px;
+    top:50px;
+    
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight:bold;
+    font-size: medium;
+   
+}
+.container h1{
+    margin-left: 30px;
+}
+.menu{
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-weight:bold;
     font-size: larger;
+
+    margin-right: 30px;
+    margin-left: 30px;
 }
+/*----------------------------------------------------------------*/
 
-
-/*Seccion introducción*/
 .intro{
-    width:100%;
     position: absolute;
     top:120px;
-    left:0px;
+    left:0px;    
 }
+
+
+@media screen and (max-width:1070px){
+    
+    .header{
+        height: 160px;
+    }
+    .intro{
+        top:160px;
+    }
+ 
+}
+
+@media screen and (max-width:800px) {
+    .menu{
+        font-size: medium;
+        margin: 6px;
+    }
+    .header .buttom{
+        width: 120px;
+        font-size: medium;
+        
+    }
+}
+/*----------------------------------------------------*/
+/*Seccion introducción*/
+
+.intro{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+
+    height: 650px;
+}
+
+.dialog{
+    margin-left: 7%;
+    margin-top: 70px;   
+}
+
 .details{
     width:100%;
     display:flex;
@@ -141,26 +209,90 @@ background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, 
     display: flex;
 }
 
+/*----------------------------------------------------------------*/
+
+
+@media screen and (max-width:836px){
+    
+    .intro{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .intro .dialog{
+        width: 90%;
+        margin-top: 70px;
+    }
+
+    .intro .photobackground{
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        -webkit-transform: translate(-50%,0);
+        -moz-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+        -o-transform: translate(-50%,0);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .photobackground img{
+        width: 90%;
+    }
+   
+}
+/*----------------------------------------------------------------*/
 /*Elementos de formulario*/
 .agenda{
-    width:70%;
-    height: 200px;
     position: absolute;
-    top: 550px;
-    left:100px;
+    top: 530px;
+    left:7%;
+
+    width:80%;
+    height: 200px;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     font-size: large;
 }
-.card{
+
+.card1{
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
-    align-content: center;
-    margin-left: 10px;
     
+    margin-left: 10px; 
+
 }
+.cardti{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.card{
+    height: 150px;
+    width: 270px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-left: 10px; 
+    
+    justify-content: space-between;
+    align-content: center;
+}
+
+.box .input{
+    margin-bottom: 20px;
+}
+
 .agenda p{
     line-height: 0px;  
 }
@@ -169,10 +301,10 @@ background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, 
     width: 90%;
     height: 150px;
     background-color: rgba(230, 230, 230,.8);
-    position: absolute;
-    bottom:0px;
-    right: 0px;;
+    
+    margin-left: 10%;
     box-shadow: 10px 1px 80px rgba(0, 0, 0,.2);
+
     display: flex; 
     justify-content: space-around;
 }
@@ -181,37 +313,122 @@ background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, 
     position: relative;
     top:50%;
     transform: translate(0,-50%);
+    width: 140px;
+    margin-right: 20px;
     
 }
-.box .card{
-    height: 100%;
-    width:270px;
-    flex-wrap: wrap;
-    align-items: flex-start;
+/*---------------------------------------------------------------*/
+
+@media screen and (max-width:1070px){
+    
+    .header{
+        height: 160px;
+    }
+    .intro{
+        top:160px;
+    }
+    
+    .agenda{
+        
+        top: 570px;
+        left: 4%;
+
+        width: 92%;
+    }
+    .box{
+        width: 100%;
+        margin-left: 0px;
+    }
 }
 
-/*Logos de empresas*/
+@media screen and (max-width:800px) {
+    .menu{
+        font-size: medium;
+        margin: 6px;
+    }
+    .header .buttom{
+        width: 120px;
+        font-size: medium;
+        
+    }  
+}
+@media screen and (max-width:836px){
+    .agenda{
+        top:820px;
+        width: 90%;
+    }
+    .agenda .buttom{
+        width: 140px;
+        top:0%;
+        left: 40%;
+    }
+   .agenda .box{
+       flex-direction: column;
+       height: 600px;
+       margin-left: 0px;
+       width: 100%;
+       background-color: gainsboro;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+}
+   .agenda .cardti{
+       width: 200px;
+   }
+   .agenda .box .card{
+       width: 100%;
+       height: 100px;
+       align-content: center;
+       padding: 15px;
+       
+   }
+   .agenda .input{
+       width: 170px;
+   }
+}  
+/*----------------------------------------*/
 .logos{
     background-color: #fefefe;
     height: 250px;
     width: 100%;
     position: absolute;
     left:0px;
-    top:102%;
+    top: 770px;;
+
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .logos img{
-    height:50px;
+    width:20%;
     opacity: .5;
 }
 .logos img:nth-child(2){
     height:35px;
     
 }
+  
+/*----------------------*/
+@media screen and (max-width:1070px){
+    .logos{
+        top: 790px;
+    }
+    
 
+}
+
+@media screen and (max-width:836px){
+    .logos{
+        top: 1300px;
+    } 
+}
+
+/*---------------------------------------*/
+/*-----------------------*/
 /*Sección Beneficios*/
 .porque{
     position: absolute;
@@ -219,34 +436,54 @@ background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, 
     left: 0px;
     width:100%;
     height: 650px;
-    background-color: #fefefe;
+    
 }
 
 .porque .dialog{
-    top:10px;
+    position: relative;
+    width:600px;
+    margin-top: 0px;
+    margin-left:7%;
+
 }
 
 .benefits{
-    width: 75%;
+    width: 85%;
     height: 300px;
+
     position: absolute;
     left:50%;
-    top:50%;
+    top: 300px;
     transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+
+   
 }
 
 .benefit{
     background-color: #fefefe;
+
     height: 100%;
-    width: 24%;
+    width: 260px;
     position: relative;
+
     display: flex;
     flex-direction: column;
+
     box-shadow: 10px 10px 70px rgba(31,58,139,.2);
     border-radius: 10px;
+    margin: 10px;
 }
+
+
+
 .porque .benefit div:not(.iconB){
     position: absolute;
     top:70px;
@@ -254,27 +491,80 @@ background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, 
     width:80%
 }
 
+
+/*----------------------------------------*/
+
+@media screen and (max-width:1316px){
+    .porque{
+        height: 1000px;
+    }
+
+}
+
+@media screen and (max-width:836px){
+    .porque{
+        height: 1400px;
+        top: 1560px;
+    }
+    .porque .dialog{
+        width:90%
+    }
+
+    .benefit{
+        width: 100%;
+        height: 250px;
+    }
+
+}
+
 /*Sección Preparaciones*/
 .preparaciones{
     width: 100%;
-    height: 800px;
+    height: 850px;
+
+
     position: absolute;
-    top:1730px;
-    left:0px;
+    top:1700px;
+    left:0px;   
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+.preparaciones .photobackground{
+    position: relative;
+    height: 550px;
+    margin-top: 300px;   
+}
+
+.preparaciones .photobackground img{
+    position: absolute;
+    bottom: 0px;
+    height: 120%;
+}
+
+
 .preparaciones .dialog{
-    position: absolute;
-    left:54%;
-    width: 35%;
+    position: relative;
+    margin-right: 7%;
+    
+    width: 520px;
 }
+
+
 .recommend{
     width: 90%;
-    border-radius: 7px;;
+
+    border-radius: 7px;
     background-color: #fefefe;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     box-shadow: 4px 4px 50px rgba(31,58,139,.2);
     margin: 30px;  
+}
+.preparaciones .iconsb{
+    margin: 7px;
 }
 .preparaciones .dialog .sub{
     font-size: large;
@@ -282,7 +572,7 @@ background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, 
 
 details{
     margin-left: 30px;
-    margin-top: 7px;
+    margin-top: 13px;
 }
 summary {
     display: block;
@@ -312,65 +602,163 @@ details[open] summary::after {
     margin-left: 23ch;
   }
 
-.preparaciones .photobackground{
-    position: absolute;
-    left: 0px;
-    bottom:0px;
-    height:500px;
-}
-.preparaciones .photobackground img{
-    height: 130%;
-    position: absolute;
-    bottom:0px;
+  /*--------------------------------*/
+  @media screen and (max-width:1334px){
+    .preparaciones{
+        top:1950px;
+    }
 }
 
+@media screen and (max-width:836px){
+    .preparaciones{
+        flex-direction: column-reverse;
+        justify-content: flex-end; 
+        align-items: center;
+
+        height: 1400px;
+
+        top: 3000px;
+    }
+
+    .preparaciones .dialog{
+        width: 90%;
+        margin: 0;
+
+        position: relative;
+        top:0px;
+    }
+
+    .recommend{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .preparaciones .photobackground{
+        position: relative;
+        bottom: 0px;
+        border-radius: 10px;
+        margin: 5px;
+        height: 350px;
+        width: 250px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+    .preparaciones .photobackground img{
+        height: 100%;
+    }
+}
+/*------------------------------------*/
+/*-----------------------*/
 /*Sección de contacto*/
 .contact{
     width:100%;
     height:800px;
+
     position: absolute;
-    top:2680px;
+    top:2580px;
     left:0;
-}
-.contact .dialog{
-    width:40%;
-    height:750px;
+
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-content: flex-start;
-    position: absolute;
-    top:0px;
 }
-.contact .dialog h2{
-    position: relative;
-    top:-20px;
+
+.contact .dialog{
+     
+    width: 550px;;
+    
+
+    margin-left: 7%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;  
+}
+
+
+.contact .dialog h2{   
     margin-bottom: 10px;
 }
+
 .contact .dialog p{
+    margin: 0px, 20px;
+}
+
+.allebenefits{
+    width: 100%;
+    
+    padding-top: 13px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.allebenefits .benefit{
+    background-color:#FEFEFF;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0,.1);
+    border-radius: 10px;
+    width:240px;
+    height:190px;
     margin: 10px;
-}
-.contact .dialog .benefit{
-    width:250px;
-    height:215px;
-    margin: 13px;
-    position: relative;  
-}
-.boxtitle{
-    width:120px;
-    height: 47px;
-    position: absolute;
-    top:27px;
-    left: 80px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-.contact .benefit .buttom{
-    width:80%;
+.contact .iconB{
     position: relative;
-    left:25px;
-    top:70px;  
+    top: 0px;
+    left: 0px;
+    margin-right: 10px;
+}
+
+.benefitheader{
+
+    width: 90%;
+    height: 55px;
+
+    margin-left: 20px;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.boxtitle{
+
+    width:70%;
+    height: 100%;
+   position: relative;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.contact .benefit .buttom{
+    height: 50px;
+    width:80%;
+
+    margin-bottom: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
 }
 .contact .buttom:not([color="blue"]) {
     background: #e9edf8;
@@ -379,9 +767,13 @@ details[open] summary::after {
 }
 
 .contact .photobackground{
-    position: absolute;
-    bottom: 40px;
-    height:60%;
+    position: relative;
+    
+    margin-top: 250px;
+    right: 0px;
+
+    height: 550px;
+    width: 40%;
     display: flex;
     align-items: flex-end;
 }
@@ -390,23 +782,85 @@ details[open] summary::after {
     height: 130%;  
 }
 
+/*------------------------------------*/
+  /*--------------------------------*/
+  @media screen and (max-width:1334px){
+    .contact{
+        top:2850px;
+    }
+}
+
+@media screen and (max-width:1070px){
+    .contact{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        height: 1200px;
+    }
+    .contact .dialog{
+        width: 80%;
+    }
+    .contact .photobackground{
+        margin-top: 50px;
+        border-radius: 10px;
+        height: 400px;
+        width: 300px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .contact .photobackground img{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:836px){
+    .contact{
+        top:4050px;
+    }
+}
+@media screen and (max-width:666px){
+    .contact{
+
+        height: 1500px;
+    }
+    .allebenefits .benefit{
+    width: 100%;
+    height: 150px;
+    }
+    .contact .benefit .buttom{
+        width: 60%;
+    }
+}
+/*+++++++++++++++++++++++++++++++*/
 /*Pie de pagina*/
+
 .footer{
     background-color: #e9edf8;
     height: 350px;
     width: 100%;
     position: absolute;
     left:0px;
-    top:3520px;
+    top:3400px;
+
+    padding-top: 20px;
+    
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .a{
+    height: 200px;
+    width: 250px;
 
-    height: 65%;
-    width: 17%;
-    position: absolute;
-    top:40px;
-    left: 60px;
+    margin-left: 20px;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -416,38 +870,100 @@ details[open] summary::after {
         margin-left: 0px;
         position: relative;
         top: -15%;
+        margin-right: 20px;;
     }
 .b{
-    height: 65%;
-    width: 45%;
-    position: absolute;
-    top:40px;
-    right: 60px;
+
+    height: 200px;
+    width: 600px;
+
+    margin-right: 20px;
+    margin-left: 15px;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
 .c{
+    
     height: 30px;
-    width: 91.5%;
+    width: 100%;
+
     position: absolute;
-    margin-left: 60px;
-    margin-right: 60px;
+    
     bottom:30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    align-items: center;
 }
 
 .c div{
     position: relative;
-    top:-14px;
+    
     display: flex;
     flex-direction: row;
+
+    margin-left: 20px;
 }
 
 .c :nth-child(2) div{
     margin-left: 15px;
     top:0px;
+    margin-right: 20px;
+}
+
+
+/*------------------------------------*/
+  /*--------------------------------*/
+  @media screen and (max-width:1334px){
+    .footer{
+        top:3670px;
+    }
+}
+
+@media screen and (max-width:1070px){
+    .footer{
+        top:4040px;
+    }
+}
+
+@media screen and (max-width:910px){
+    
+
+    .footer{
+        justify-content: center;
+        align-content: flex-start;
+        height: 400px;
+    }
+
+    .a{
+        flex-direction: row;
+        width: 95%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .b{
+        margin-top: 20px;
+        width: 95%;
+        font-size: small;
+    }
+    .c{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:836px){
+    .footer{
+        top:5300px;
+    }
+}
+
+@media screen and (max-width:666px){
+    .footer{
+        top:5570px;
+    }
 }
