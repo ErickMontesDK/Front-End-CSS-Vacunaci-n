@@ -1,969 +1,425 @@
-/*Valores globales*/
-
-*{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    color: #6f7885;
-}
-body{
-        background-color: #fbfcfe;
-}
-p{
-    line-height: 20pt;
-}
-h1{
-    font-size: xx-large; font-weight: bold;
-    
-    color:#2c4bc6; 
-}
-h2{
-    color:#1f3f70;
-    font-size:50px;
-    font-weight: bolder;
-    line-height: 40pt;
-}
-.sub{
-    line-height: 20px;
-    color: #1f3f70;
-    font-weight: bold;
-    font-size: 22px;
-}
-.buttom{
-    height: 40px;
-    width:200px;
-    background: #2c4bc6;
-    border-radius: 6px;
-    box-shadow: 0 10px 30px #2c4bc6;
-    color:#FEFEFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: large;  
-    text-align: center;
-
-}
-.input{
-    width:80%;
-    height: 50px;
-    border: 0px;
-    background: rgba(22,22,22, .0);
-    font-size: large;
-    color: #1f3f70;
-    font-weight: bolder;
-}
-.dialog{
-    width:400px;  
-}
-.icon{
-    width: 25px; 
-    height: 25px;
-    background-color: #fff8e9;
-    position: relative;
-}
-.iconsb{
-    width: 35px;
-    height: 35px; 
-    background-color: #e9edf8;
-    position: relative;
-    border-radius: 10px;
-}
-.iconB{
-    background-color: #e9edf8;
-    width:45px;
-    height: 45px;
-    position: relative;
-    top:25px;
-    left: 25px;
-    border-radius: 10px;
-}
-.icon img, .iconsb img, .iconB img{
-    height: 60%;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-}
-
-.photobackground{
-    background: rgb(8,152,230);
-    background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(34,93,228,1) 32%, rgba(31,58,139,1) 89%);
-    width:43%;
-    height: 650px;
-    
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
-/*Elementos de Header*/
-.header{
-    width:100%;
-    position: absolute;
-    top:0px; left:0px;
-    background-color: rgb(245, 245, 245);
-
-    height:120px; 
-}
-.header h1{
-    margin:0;
-}
-
-.rblue{
-    height: 100%;
-    width:45%;
-    background-color: rgba(37,118,223,.3);
-    position: absolute;
-    top:0;
-    right:0;
-    box-shadow: inset 40px 10px 50px rgb(245, 245, 245);
-}
-.container{
-    height: 40px;
-    width:100%;
-    position:absolute;
-    top:50px;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-weight:bold;
-    font-size: medium;
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta htttp-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name= “viewport” content= “width=device-width, initial-scale=1.0” >
+        <title>Vacunate hoy</title>
    
-}
-.container h1{
-    margin-left: 30px;
-}
-.menu{
-    width: 800px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-weight:bold;
-    font-size: larger;
-
-    margin-right: 30px;
-    margin-left: 30px;
-}
-/*----------------------------------------------------------------*/
-
-.intro{
-    position: absolute;
-    top:120px;
-    left:0px;    
-}
-
-
-@media screen and (max-width:1070px){
-    
-    .header{
-        height: 160px;
-    }
-    .intro{
-        top:160px;
-    }
- 
-}
-
-@media screen and (max-width:800px) {
-    .menu{
-        font-size: medium;
-        margin: 6px;
-    }
-    .header .buttom{
-        width: 120px;
-        font-size: medium;
-        
-    }
-}
-/*----------------------------------------------------*/
-/*Seccion introducción*/
-
-.intro{
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-
-    height: 650px;
-}
-
-.dialog{
-    margin-left: 7%;
-    margin-top: 70px;   
-}
-
-.details{
-    width:100%;
-    display:flex;
-    justify-content: space-between;    
-}
-.details div{
-    display: flex;
-}
-
-/*----------------------------------------------------------------*/
-
-
-@media screen and (max-width:836px){
-    
-    .intro{
-        flex-direction: column;
-        justify-content: center;
-
-    }
-    .intro .dialog{
-        width: 90%;
-        margin-top: 70px;
-    }
-
-    .intro .photobackground{
-        height: 300px;
-        width: 200px;
-        border-radius: 10px;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%,0);
-        -webkit-transform: translate(-50%,0);
-        -moz-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-        -o-transform: translate(-50%,0);
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-}
-    .photobackground img{
-        width: 90%;
-    }
-   
-}
-/*----------------------------------------------------------------*/
-/*Elementos de formulario*/
-.agenda{
-    position: absolute;
-    top: 530px;
-    left:7%;
-
-    width:80%;
-    height: 200px;
-
-    display: flex;
-    flex-direction: column;
-
-    font-size: large;
-}
-
-.card1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    
-    margin-left: 10px; 
-
-}
-.cardti{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-.card{
-    height: 150px;
-    width: 270px;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    margin-left: 10px; 
-    
-    justify-content: space-between;
-    align-content: center;
-}
-
-.box .input{
-    margin-bottom: 20px;
-}
-
-.agenda p{
-    line-height: 0px;  
-}
-
-.box{
-    width: 90%;
-    height: 150px;
-    background-color: rgba(230, 230, 230,.8);
-    
-    margin-left: 10%;
-    box-shadow: 10px 1px 80px rgba(0, 0, 0,.2);
-
-    display: flex; 
-    justify-content: space-around;
-}
-
-.box .buttom{
-    position: relative;
-    top:50%;
-    transform: translate(0,-50%);
-    width: 140px;
-    margin-right: 20px;
-    
-}
-/*---------------------------------------------------------------*/
-
-@media screen and (max-width:1070px){
-    
-    .header{
-        height: 160px;
-    }
-    .intro{
-        top:160px;
-    }
-    
-    .agenda{
-        
-        top: 570px;
-        left: 4%;
-
-        width: 92%;
-    }
-    .box{
-        width: 100%;
-        margin-left: 0px;
-    }
-}
-
-@media screen and (max-width:800px) {
-    .menu{
-        font-size: medium;
-        margin: 6px;
-    }
-    .header .buttom{
-        width: 120px;
-        font-size: medium;
-        
-    }  
-}
-@media screen and (max-width:836px){
-    .agenda{
-        top:820px;
-        width: 90%;
-    }
-    .agenda .buttom{
-        width: 140px;
-        top:0%;
-        left: 40%;
-    }
-   .agenda .box{
-       flex-direction: column;
-       height: 600px;
-       margin-left: 0px;
-       width: 100%;
-       background-color: gainsboro;
-       border-radius: 10px;
-       -webkit-border-radius: 10px;
-       -moz-border-radius: 10px;
-       -ms-border-radius: 10px;
-       -o-border-radius: 10px;
-}
-   .agenda .cardti{
-       width: 200px;
-   }
-   .agenda .box .card{
-       width: 100%;
-       height: 100px;
-       align-content: center;
-       padding: 15px;
-       
-   }
-   .agenda .input{
-       width: 170px;
-   }
-}  
-/*----------------------------------------*/
-.logos{
-    background-color: #fefefe;
-    height: 250px;
-    width: 100%;
-    position: absolute;
-    left:0px;
-    top: 770px;;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.logos img{
-    width:20%;
-    opacity: .5;
-}
-.logos img:nth-child(2){
-    height:35px;
-    
-}
-  
-/*----------------------*/
-@media screen and (max-width:1070px){
-    .logos{
-        top: 790px;
-    }
-    
-
-}
-
-@media screen and (max-width:836px){
-    .logos{
-        top: 1300px;
-    } 
-}
-
-/*---------------------------------------*/
-/*-----------------------*/
-/*Sección Beneficios*/
-.porque{
-    position: absolute;
-    top: 1050px;
-    left: 0px;
-    width:100%;
-    height: 650px;
-    
-}
-
-.porque .dialog{
-    position: relative;
-    width:600px;
-    margin-top: 0px;
-    margin-left:7%;
-
-}
-
-.benefits{
-    width: 85%;
-    height: 300px;
-
-    position: absolute;
-    left:50%;
-    top: 300px;
-    transform: translate(-50%);
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-   
-}
-
-.benefit{
-    background-color: #fefefe;
-
-    height: 100%;
-    width: 260px;
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-
-    box-shadow: 10px 10px 70px rgba(31,58,139,.2);
-    border-radius: 10px;
-    margin: 10px;
-}
-
-
-
-.porque .benefit div:not(.iconB){
-    position: absolute;
-    top:70px;
-    left:20px;
-    width:80%
-}
-
-
-/*----------------------------------------*/
-
-@media screen and (max-width:1316px){
-    .porque{
-        height: 1000px;
-    }
-
-}
-
-@media screen and (max-width:836px){
-    .porque{
-        height: 1400px;
-        top: 1560px;
-    }
-    .porque .dialog{
-        width:90%
-    }
-
-    .benefit{
-        width: 100%;
-        height: 250px;
-    }
-
-}
-
-/*Sección Preparaciones*/
-.preparaciones{
-    width: 100%;
-    height: 850px;
-
-
-    position: absolute;
-    top:1700px;
-    left:0px;   
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.preparaciones .photobackground{
-    position: relative;
-    height: 550px;
-    margin-top: 300px;   
-}
-
-.preparaciones .photobackground img{
-    position: absolute;
-    bottom: 0px;
-    height: 120%;
-}
-
-
-.preparaciones .dialog{
-    position: relative;
-    margin-right: 7%;
-    
-    width: 520px;
-}
-
-
-.recommend{
-    width: 90%;
-
-    border-radius: 7px;
-    background-color: #fefefe;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    box-shadow: 4px 4px 50px rgba(31,58,139,.2);
-    margin: 30px;  
-}
-.preparaciones .iconsb{
-    margin: 7px;
-}
-.preparaciones .dialog .sub{
-    font-size: large;
-}
-
-details{
-    margin-left: 30px;
-    margin-top: 13px;
-}
-summary {
-    display: block;
-}
-summary::after { 
-    display: inline-block;
-    transition: 0.2s;
-    content: '🔽'; /* chevron */
-}
-details[open] summary::after {
-    transform: rotate(180deg);
-  }
-            /*Ajuste de señalamiento*/
-.dialog :nth-child(3) summary::after {
-    margin-left: 10ch;
-  }
-.dialog :nth-child(4) summary::after {
-    margin-left: 21ch;
-  }
-.dialog :nth-child(5) summary::after {
-    margin-left: 15ch;
-  }
-.dialog :nth-child(6) summary::after {
-    margin-left: 19.5ch;
-  }
-.dialog :nth-child(7) summary::after {
-    margin-left: 23ch;
-  }
-
-  /*--------------------------------*/
-  @media screen and (max-width:1334px){
-    .preparaciones{
-        top:1950px;
-    }
-}
-
-@media screen and (max-width:836px){
-    .preparaciones{
-        flex-direction: column-reverse;
-        justify-content: flex-end; 
-        align-items: center;
-
-        height: 1400px;
-
-        top: 3000px;
-    }
-
-    .preparaciones .dialog{
-        width: 90%;
-        margin: 0;
-
-        position: relative;
-        top:0px;
-    }
-
-    .recommend{
-        width: 100%;
-        margin-left: 0px;
-    }
-    .preparaciones .photobackground{
-        position: relative;
-        bottom: 0px;
-        border-radius: 10px;
-        margin: 5px;
-        height: 350px;
-        width: 250px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-}
-
-    .preparaciones .photobackground img{
-        height: 100%;
-    }
-}
-/*------------------------------------*/
-/*-----------------------*/
-/*Sección de contacto*/
-.contact{
-    width:100%;
-    height:800px;
-
-    position: absolute;
-    top:2580px;
-    left:0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact .dialog{
+        <link rel="stylesheet" href="./andere.css">
      
-    width: 550px;;
+    </head>
+    <body>
+        <!--Header-->
+        <section class="header">
+            
+            <div class="rblue"></div>
+            <div class="container">
+                <div>
+                    <h1>Vacunación</h1>
+                </div>
+                <div class="menu">
+                    <span>
+                        <p>Base de datos</p>
+                    </span>
+                    <span>
+                        <p>Educación</p>
+                    </span>
+                   <span>
+                        <p>Noticias</p>
+                   </span>
+                    <span>
+                        <p>Regulación</p>
+                    </span>
+                    <div class="buttom">Desmintiendo mitos</div>
+                </div>
+            </div>
+        </section>
+        
+       
+        <!--Intro-->
+        <section class="intro">
+            <div class="dialog">
+                <h2>Combate el virus con las vacunas</h2>
+                <p>Detengamos esta pandemía al matar el virus con la vacuna.
+                No dejes que tú y los de tu familia se infecten</p>
+                <div class="details">
+                    <div>
+                        <div class="icon">
+                            <img src="./Iconos/shield.png">
+                        </div>
+                        Mejor Protección
+                    </div>
+                    <div>
+                        <div class="icon">
+                            <img src="./Iconos/icons8-estrella-48.png">
+                        </div>
+                        Vacunas Seleccionadas
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="photobackground">
+                <img src="./models/enfermera.png">
+            </div>
+        </section>
+
+         <!--Formulario-->
+        <section class="agenda">
+
+            <div class="card1">
+                <div class="iconsb">
+                    <img src="./Iconos/icons8-reloj-50.png"></div>
+                <p class="sub">Agenda tu vacunación</p>
+            </div>
+
+            <div class="box">
+
+                <div class="card">
+                    <div class="cardti">
+                        <div class="iconsb">
+                            <img src="./Iconos/icons8-map-64.png"></div>
+                        <p class="sub">Locación</p>
+                    </div class="cardti">
+                    <input type="text" class="input" id="from" name="from" placeholder="Ciudad, Estado">
+                </div>
+
+                <div class="card">
+                    <div class="cardti">
+                        <div class="iconsb">
+                            <img src="./Iconos/icons8-calendario-48.png"></div>
+                        <p class="sub">Fecha</p>
+                    </div class="cardti">
+                    <input type="date" class="input" id="when" name="when">
+                </div>
+
+                <div class="card">
+                    <div class="cardti">
+                        <div class="iconsb">
+                            <img src="./Iconos/icons8-jeringa-50.png"></div>
+                        <p class="sub">Tipo de vacuna</p>
+                    </div class="cardti">
+                    <select id="vacuna" name="vacuna" class="input">
+                        <option value="Moderna">AstraZeneca</option>
+                        <option value="Aztra">Sinovac</option>
+                        <option value="Pfizer">Pfizer</option>
+                        <option value="Sputnik">Moderna</option>
+                    </select>
+                    
+                </div>
+
+                <div class="buttom">Registrar</div>
+
+            </div>
+        </section>
+
+        <!--Logos-->
+        <section class="logos">
+            <img src="./logos/astrazeneca-logo.png">
+            <img src="./logos/Sinovac_logo.svg.png">
+            <img src="./logos/Pfizer_(2021).svg.png">
+            <img src="./logos/Moderna_logo.svg.png">
+        </section>
+
+        <!--Beneficios-->
+        <section class="porque">
+            <div class="dialog">
+                <h2>¿Por qué vacunarme?</h2>
+                <p>Con fin de disipar cualquier duda sobre recibir la vacuna para
+                    el Covid-19, observe los siguientes 4 beneficios sobre la vacunación</p>
+            </div>
+
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="iconB"><img src="./Iconos/parallel-tasks-icon-32.png"></div>
+                    <div><p class="sub">Disminuye la dispersión del virus</p>
+                    <p>La vacunación ha probado prevenir efectivamente a algunos
+                        de ser infectados con Coronavirus
+                    </p></div>
+
+                </div>
+                <div class="benefit">
+                    <div class="iconB"><img src="./Iconos/user-shield-icon-24.png"></div>
+                    <div><p class="sub">Forma anticuerpos</p>
+                    <p>La vacuna contra Covid-19 ha provado ayudar en la formación de 
+                        anticuerpos al sistema inmune
+                    </p></div>
+
+                </div>
+                <div class="benefit">
+                    <div class="iconB"><img src="./Iconos/myspace-icon-32.png"></div>
+                    <div><p class="sub">Proteger gente cercana</p>
+                    <p>Los beneficios de la vacunacion que recibimos es que 
+                        tambien podemos proteger a la gente alrededor de nosotros
+                    </p></div>
+
+                </div>
+                <div class="benefit">
+                    <div class="iconB"><img src="./Iconos/statistics-icon-32.png"></div>
+                    <div><p class="sub">Crear inmunidad de grupo</p>
+                    <p>La vacunacion contra Covid-19 es tambien benefica por
+                        crear inmunidad de grupo o rebaño
+                    </p></div>
+
+                </div>
+            </div>
+        </section>
+
+
+         <!--Preparaciones-->
+         <section class="preparaciones">
+
+            
+            <div class="photobackground">
+                <img src="./models/girls.png">
+            </div>
+            
+
+            <div class="dialog">
+                <h2>Preparaciones antes de vacunarse</h2>
+                <p>El éxito de las vacunas es fuertemente influenciada por la fuerza
+                    del sistema inmune del cuerpo. Por lo tanto, hay muchas cosas que 
+                    se pueden hacer para que la vacune funcione: </p>
+                <div class="recommend">
+                    <div class="iconsb"> 
+                        <img src="./Iconos/delete-shield-icon-48.png">
+                    </div>
+                    <details>
+                        <summary class="sub">Evita bebidas alcoholicas</summary>
+                        <p>More info about the details.</p>
+                      </details>
+                </div>
+                <div class="recommend">
+                    <div class="iconsb">
+                        <img src="./Iconos/delete-message-icon-48.png">
+                    </div>
+                    <details>
+                        <summary class="sub">Evita estrés</summary>
+                        <p>More info about the details.</p>
+                      </details>
+                </div>
+                <div class="recommend">
+                    <div class="iconsb">
+                        <img src="./Iconos/bunch-ingredients-icon-48.png">
+                    </div>
+                    <details>
+                        <summary class="sub">Come comida sana</summary>
+                        <p>More info about the details.</p>
+                      </details>
+                </div>
+                <div class="recommend">
+                    <div class="iconsb">
+                        <img src="./Iconos/sleeping-room-icon-48.png">
+                    </div>
+                    <details>
+                        <summary class="sub">Duerme bien </summary>
+                        <p>More info about the details.</p>
+                      </details>
+                </div>
+                <div class="recommend">
+                    <div class="iconsb">
+                        <img src="./Iconos/heart-monitor-icon-48.png">
+                    </div>
+                    <details>
+                        <summary class="sub">Ejercitate</summary>
+                        <p>More info about the details.</p>
+                      </details>
+                </div>
+            </div>
+
+        </section>
+
+                       <!--Contacto de emergencia-->
+               <section class="contact">
+                <div class="dialog">
+                    <h2>Contacto de emergencia</h2>
+                    <p>Marca a alguno de los contactos de abajo si tú o alguien de
+                        tu familia se sienten mal y tienen algun sintoma similar a
+                        los del Covid-19. Asegurate cuidarte igualmente antes de reportarnos:
+                    </p>
+    
+                    <div class="allebenefits">
+    
+                        <div class="benefit">
+                            
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/phone-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Llamar</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div>
+
+                            <div class="buttom">Llamar aquí</div>
+                        </div>
+                        
+                        <div class="benefit">
+                            
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/quote-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Chat</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div class="benefitheader">
+                            <div class="buttom" color="blue">Chatear aquí</div>
+                        </div>
+
+                        <div class="benefit">
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/video-call-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Videollamada</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div>
+                            <div class="buttom">Iniciar videollamada</div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/message-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Mensaje</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div class="benefitheader">
+                            <div class="buttom">Mandar mensaje</div>
+                        </div>
+                    </div class="allebenefits">
+                </div>
     
 
-    margin-left: 7%;
+                <div class="photobackground">
+                    <img src="./models/enfermero.png">
+                </div>
+            </section>
 
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;  
-}
-
-
-.contact .dialog h2{   
-    margin-bottom: 10px;
-}
-
-.contact .dialog p{
-    margin: 0px, 20px;
-}
-
-.allebenefits{
-    width: 100%;
+        <!--Contacto de emergencia-->
+           <section class="contact">
+                <div class="dialog">
+                    <h2>Contacto de emergencia</h2>
+                    <p>Marca a alguno de los contactos de abajo si tú o alguien de
+                        tu familia se sienten mal y tienen algun sintoma similar a
+                        los del Covid-19. Asegurate cuidarte igualmente antes de reportarnos:
+                    </p>
     
-    padding-top: 13px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.allebenefits .benefit{
-    background-color:#FEFEFF;
-    box-shadow: 10px 10px 100px rgba(0, 0, 0,.1);
-    border-radius: 10px;
-    width:240px;
-    height:190px;
-    margin: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.contact .iconB{
-    position: relative;
-    top: 0px;
-    left: 0px;
-    margin-right: 10px;
-}
-
-.benefitheader{
-
-    width: 90%;
-    height: 55px;
-
-    margin-left: 20px;
-    margin-top: 20px;
+                    <div class="allebenefits">
     
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
+                        <div class="benefit">
+                            
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/phone-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Llamar</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div>
 
-.boxtitle{
+                            <div class="buttom">Llamar aquí</div>
+                        </div>
+                        
+                        <div class="benefit">
+                            
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/quote-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Chat</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div class="benefitheader">
+                            <div class="buttom" color="blue">Chatear aquí</div>
+                        </div>
 
-    width:70%;
-    height: 100%;
-   position: relative;
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-
-.contact .benefit .buttom{
-    height: 50px;
-    width:80%;
-
-    margin-bottom: 20px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,0);
-    -webkit-transform: translate(-50%,0);
-    -moz-transform: translate(-50%,0);
-    -ms-transform: translate(-50%,0);
-    -o-transform: translate(-50%,0);
-}
-.contact .buttom:not([color="blue"]) {
-    background: #e9edf8;
-    color: #2c4bc6;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0,.2);
-}
-
-.contact .photobackground{
-    position: relative;
-    
-    margin-top: 250px;
-    right: 0px;
-
-    height: 550px;
-    width: 40%;
-    display: flex;
-    align-items: flex-end;
-}
-
-.contact .photobackground img{
-    height: 130%;  
-}
-
-/*------------------------------------*/
-  /*--------------------------------*/
-  @media screen and (max-width:1334px){
-    .contact{
-        top:2850px;
-    }
-}
-
-@media screen and (max-width:1070px){
-    .contact{
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-
-        height: 1200px;
-    }
-    .contact .dialog{
-        width: 80%;
-    }
-    .contact .photobackground{
-        margin-top: 50px;
-        border-radius: 10px;
-        height: 400px;
-        width: 300px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-}
-    .contact .photobackground img{
-        height: 100%;
-    }
-}
-
-@media screen and (max-width:836px){
-    .contact{
-        top:4050px;
-    }
-}
-@media screen and (max-width:666px){
-    .contact{
-
-        height: 1500px;
-    }
-    .allebenefits .benefit{
-    width: 100%;
-    height: 150px;
-    }
-    .contact .benefit .buttom{
-        width: 60%;
-    }
-}
-/*+++++++++++++++++++++++++++++++*/
-/*Pie de pagina*/
-
-.footer{
-    background-color: #e9edf8;
-    height: 350px;
-    width: 100%;
-    position: absolute;
-    left:0px;
-    top:3400px;
-
-    padding-top: 20px;
+                        <div class="benefit">
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/video-call-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Videollamada</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div>
+                            <div class="buttom">Iniciar videollamada</div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefitheader">
+                                <div class="iconB">
+                                    <img src="./Iconos/message-icon-48.png">
+                                </div>
+                                <div class="boxtitle">
+                                    <div class="sub">Mensaje</div>
+                                    <div>021.123.145.14</div>
+                                </div>
+                            </div class="benefitheader">
+                            <div class="buttom">Mandar mensaje</div>
+                        </div>
+                    </div class="allebenefits">
+                </div>
     
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+                <div class="photobackground">
+                    <img src="./models/enfermero.png">
+                </div>
+            </section>  
 
-.a{
-    height: 200px;
-    width: 250px;
-
-    margin-left: 20px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-}
-    .a h1, .a p{
-        margin-left: 0px;
-        position: relative;
-        top: -15%;
-        margin-right: 20px;;
-    }
-.b{
-
-    height: 200px;
-    width: 600px;
-
-    margin-right: 20px;
-    margin-left: 15px;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-.c{
-    
-    height: 30px;
-    width: 100%;
-
-    position: absolute;
-    
-    bottom:30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    align-items: center;
-}
-
-.c div{
-    position: relative;
-    
-    display: flex;
-    flex-direction: row;
-
-    margin-left: 20px;
-}
-
-.c :nth-child(2) div{
-    margin-left: 15px;
-    top:0px;
-    margin-right: 20px;
-}
+        <!--Footer-->
+        <section class="footer">
+            <div class="a">
+                <span>
+                    <h1>Vacunación</h1>
+                </span>
+               <div>
+                   <p>Nuestra meta es ayudar a liberar al mundo
+                       de la actual pandemía
+                   </p>
+               </div> 
+            </div>
+            <div class="b">
+                <div>
+                    <p class="sub">Acerca de</p>
+                    <p>Sobre Nosotros</p>
+                    <p>Atributos</p>
+                    <p>Noticias & Blog</p>
+                </div>
+                <div>
+                    <p class="sub">Compañia</p>
+                    <p>¿Cómo Trabajamos?</p>
+                    <p>Capital</p>
+                    <p>Seguridad</p>
+                </div>
+                <div>
+                    <p class="sub">Soporte</p>
+                    <p>FAQs</p>
+                    <p>Centro de Soporte</p>
+                    <p>Contactanos</p>
+                </div>
+                
+            </div>
+            <div class="c">
+                <div><p>@2022 Vacunación. Todos los derechos reservados</p></div>
+                <div>
+                    <div><p>Terminos y condiciones</p></div>
+                    <div><p>Politica de privacidad</p></div>
+                </div>
+            </div>
+        </section>
 
 
-/*------------------------------------*/
-  /*--------------------------------*/
-  @media screen and (max-width:1334px){
-    .footer{
-        top:3670px;
-    }
-}
-
-@media screen and (max-width:1070px){
-    .footer{
-        top:4040px;
-    }
-}
-
-@media screen and (max-width:910px){
-    
-
-    .footer{
-        justify-content: center;
-        align-content: flex-start;
-        height: 400px;
-    }
-
-    .a{
-        flex-direction: row;
-        width: 95%;
-        height: 50px;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .b{
-        margin-top: 20px;
-        width: 95%;
-        font-size: small;
-    }
-    .c{
-        font-size: small;
-    }
-}
-
-@media screen and (max-width:836px){
-    .footer{
-        top:5300px;
-    }
-}
-
-@media screen and (max-width:666px){
-    .footer{
-        top:5570px;
-    }
-}
+        
+    </body>
+</html>
