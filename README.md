@@ -9,7 +9,7 @@ https://erickmontesdk.github.io/Front-End-CSS-Vacunaci-n/
 <img src="https://raw.githubusercontent.com/ErickMontesDK/Front-End-CSS-Vacunaci-n/main/Entregables/captura%20pagina%20vacunacion%20css.jpeg" alt="captura de página">
 
 *Publicidad creada*
-<img src="https://raw.githubusercontent.com/ErickMontesDK/Front-End-CSS-Vacunaci-n/main/Entregables/Ayudanos%20a%20combatir%20el%20Covid-19%20a.png">
-<img src="https://raw.githubusercontent.com/ErickMontesDK/Front-End-CSS-Vacunaci-n/main/Entregables/Ayudanos%20a%20combatir%20el%20Covid-19%20story.png">
+<img src="https://raw.githubusercontent.com/ErickMontesDK/Front-End-CSS-Vacunaci-n/main/Entregables/Ayudanos%20a%20combatir%20el%20Covid-19%20a.png" width="300px">
+<img src="https://raw.githubusercontent.com/ErickMontesDK/Front-End-CSS-Vacunaci-n/main/Entregables/Ayudanos%20a%20combatir%20el%20Covid-19%20story.png" width="300px">
 
 
